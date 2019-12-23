@@ -68,6 +68,7 @@ export default {
   },
   created() {
     this.getArticle()
+    console.log(this.$CONFIG)
   },
   methods:{
     handleSelect(key, keyPath) {
@@ -77,7 +78,7 @@ export default {
       // const {id} = this.$route.params
       try {
         this.isLoading = true
-        const res = await http.get(`http://localhost:3002/articles`)
+        const res = await http.get(`${this.$CONFIG.apiBaseUrl}/articles`)
         this.articles = res.data
       } catch (e) {
         this.$notify.error({
