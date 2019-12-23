@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <router-link to="about">
+    <router-link :to="{ name: 'articles' }">
       <el-button type="primary">登陆</el-button>
     </router-link>
   </div>

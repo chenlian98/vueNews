@@ -1,11 +1,11 @@
 <template>
-  <div></div>
+  <div>edit</div>
 </template>
 
 <script>
-  export default {
-    name: "ArticleEdit"
-  };
+export default {
+  name: "ArticleEdit"
+};
 </script>
 
 <style scoped>
